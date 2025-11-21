@@ -43,7 +43,7 @@ export const classifyImage = async (imageElement: HTMLImageElement) => {
   console.log(`AI sees: ${bestLabel} (${(highestProb * 100).toFixed(0)}%)`);
 
   // THRESHOLD: Accept match if > 45% confidence (Faster detection)
-  if (highestProb < 0.60) return null;
+  if (highestProb < 0.80) return null;
 
   // Map exact labels from Teachable Machine to App IDs
   switch (bestLabel) {
