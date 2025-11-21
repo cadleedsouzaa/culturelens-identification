@@ -133,7 +133,7 @@ const Result = () => {
         </div>
 
         {/* SECTION 2: INFO & RECORDER */}
-        <div className="p-6 bg-stone-900">
+        <div className="p-6 bg-stone-900 border-b border-stone-800">
           <h3 className="text-white font-bold text-xl mb-2">About this Craft</h3>
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
             {info.desc}
@@ -147,7 +147,7 @@ const Result = () => {
 
         {/* SECTION 3: THE MAKER PROCESS */}
         {activeMaker && (
-          <div className="w-full border-t border-stone-800">
+          <div className="w-full">
             <div className="p-4 bg-stone-950 flex items-center gap-2 border-b border-stone-800">
                 <div className="bg-green-500/20 p-2 rounded-full">
                     <Hammer className="w-4 h-4 text-green-500" />
