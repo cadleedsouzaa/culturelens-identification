@@ -238,11 +238,11 @@ const MadhubaniMaker = () => {
         <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 5], fov: 45 }}>
           {/* Add Suspense for Image Loading */}
           <Suspense fallback={<Html center><div className="text-white text-xs">Loading Art...</div></Html>}>
-            <Stage intensity={0.5} environment="city" adjustCamera={false}>
+            <Stage intensity={0.5} environment="city" adjustCamera={true}>
                <MakerScene step={step} />
             </Stage>
           </Suspense>
-          <OrbitControls enableZoom={false} />
+          <OrbitControls enableZoom={true} />
         </Canvas>
       </div>
 
@@ -250,11 +250,11 @@ const MadhubaniMaker = () => {
           <div className="flex gap-2 mb-3">
             {steps.map((_, i) => (<div key={i} className={`h-1.5 w-8 rounded-full transition-all ${i <= step ? 'bg-orange-500' : 'bg-stone-700'}`} />))}
           </div>
-          <h3 className="text-orange-400 font-bold text-2xl mb-2 font-serif">{steps[step].label}</h3>
-          <p className="text-gray-300 text-sm mb-6 max-w-md">{steps[step].desc}</p>
+          <h3 className="text-white font-bold text-2xl mb-2 font-serif">{steps[step].label}</h3>
+          <p className="text-white text-sm mb-6 max-w-md">{steps[step].desc}</p>
           <div className="flex gap-4 w-full max-w-sm">
              <button onClick={() => setStep(0)} className="px-6 py-3 rounded-xl bg-stone-700 text-white font-bold text-sm hover:bg-stone-600 border border-stone-500">Restart</button>
-             <button onClick={() => step < 4 && setStep(step + 1)} disabled={step === 4} className={`flex-1 py-3 rounded-xl font-bold text-black shadow-lg transition-transform active:scale-95 ${step === 4 ? 'bg-green-500 cursor-default' : 'bg-orange-500 hover:bg-orange-400'}`}>{step === 4 ? "Completed" : "Next Step →"}</button>
+             <button onClick={() => step < 4 && setStep(step + 1)} disabled={step === 4} className={`flex-1 py-3 rounded-xl font-bold border border-white text-white shadow-lg transition-transform active:scale-95 ${step === 4 ? 'bg-green-500 cursor-default' : 'bg-orange-500 hover:bg-orange-400'}`}>{step === 4 ? "Completed" : "Next Step →"}</button>
           </div>
       </div>
     </div>

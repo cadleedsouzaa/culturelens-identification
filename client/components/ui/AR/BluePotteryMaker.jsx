@@ -153,10 +153,10 @@ const BluePotteryMaker = () => {
       {/* TOP: 3D (70%) */}
       <div className="h-[70%] w-full bg-gradient-to-b from-stone-800/50 to-black">
         <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 6], fov: 45 }}>
-          <Stage intensity={0.6} environment="city" adjustCamera={false}>
+          <Stage intensity={0.6} environment="city" adjustCamera={true}>
              <MakerScene step={step} />
           </Stage>
-          <OrbitControls enableZoom={false} />
+          <OrbitControls enableZoom={true} />
         </Canvas>
       </div>
 
@@ -170,8 +170,8 @@ const BluePotteryMaker = () => {
             ))}
           </div>
 
-          <h3 className="text-blue-400 font-bold text-2xl mb-1 font-serif">{steps[step].label}</h3>
-          <p className="text-gray-300 text-sm mb-4 max-w-md">{steps[step].desc}</p>
+          <h3 className="text-white/80 font-bold text-2xl mb-1 font-serif">{steps[step].label}</h3>
+          <p className="text-white/80 text-sm mb-4 max-w-md">{steps[step].desc}</p>
           
           <div className="flex gap-4 w-full max-w-sm">
              <button 
@@ -183,7 +183,7 @@ const BluePotteryMaker = () => {
              <button 
                onClick={() => step < 3 && setStep(step + 1)} 
                disabled={step === 3} 
-               className={`flex-1 py-3 rounded-xl font-bold text-black shadow-lg transition-transform active:scale-95 
+               className={`flex-1 py-3 rounded-xl font-bold border border-white text-white/80 shadow-lg transition-transform active:scale-95 
                  ${step === 3 ? 'bg-green-500 cursor-default' : 'bg-blue-500 hover:bg-blue-400'}`}
              >
                {step === 3 ? "Process Complete" : "Next Step →"}
