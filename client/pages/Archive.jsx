@@ -115,7 +115,7 @@ const Archive = () => {
         <div className="flex items-center gap-4">
            {stories.length > 0 && (
               <button onClick={clearHistory} className="text-red-500 hover:text-red-400 text-xs flex items-center gap-1">
-                <Trash2 size={14} /> Clear All
+                <Trash2 size={14} /> Clear All Oral Histories
               </button>
             )}
         </div>
@@ -132,7 +132,9 @@ const Archive = () => {
           artId="channapatna" 
           allStories={stories}
         >
-          <ChannapatnaToy />
+          <div className="h-[85vh] w-full">
+            <ChannapatnaMaker />
+          </div>
         </ArchiveItem>
 
         {/* 2. BLUE POTTERY */}
