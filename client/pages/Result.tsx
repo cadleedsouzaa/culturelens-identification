@@ -68,7 +68,7 @@ const Result = () => {
     <div className="h-screen bg-background text-foreground flex flex-col overflow-hidden transition-colors duration-500 font-sans">
       {/* Header */}
       <div className="p-4 flex items-center gap-4 bg-background/80 border-b border-border z-20 shrink-0 backdrop-blur-sm">
-        <Link to="/" className="p-2 bg-muted rounded-full text-foreground hover:bg-muted/80 transition-colors">
+        <Link to="/Archive" className="p-2 bg-muted rounded-full text-foreground hover:bg-muted/80 transition-colors">
           <ArrowLeft size={20} />
         </Link>
         <div className="flex-1">

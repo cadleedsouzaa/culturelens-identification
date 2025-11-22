@@ -234,7 +234,7 @@ const MadhubaniMaker = () => {
   return (
     <div className="flex flex-col h-full w-full bg-black">
       
-      <div className="h-[65%] w-full bg-gradient-to-b from-stone-800/50 to-black">
+      <div className="h-full w-full bg-gradient-to-b from-stone-800/50 to-black">
         <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 5], fov: 45 }}>
           {/* Add Suspense for Image Loading */}
           <Suspense fallback={<Html center><div className="text-white text-xs">Loading Art...</div></Html>}>

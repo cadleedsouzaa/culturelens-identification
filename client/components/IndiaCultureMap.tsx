@@ -9,7 +9,7 @@ const INDIA_GEO_JSON = "https://raw.githubusercontent.com/geohacker/india/master
 
 const BASE_STATE_DATA: any = {
   "Karnataka": { route: "/result/channapatna", title: "Channapatna Toys", desc: "The Land of Toys", img: "/channapatna_nobg.png" },
-  "Rajasthan": { route: "/result/blue-pottery", title: "Blue Pottery", desc: "Jaipur's Turko-Persian Art", img: "/assets/blue_pottery_preview.jpg" },
+  "Rajasthan": { route: "/result/blue-pottery", title: "Blue Pottery", desc: "Jaipur's Turko-Persian Art", img: "/blue.png" },
   "Maharashtra": { route: "/result/warli", title: "Warli Art", desc: "Ancient Tribal Paintings", img: "/warli.jpg" },
   "Tamil Nadu": { route: "/result/kolam", title: "Kolam", desc: "Geometric Floor Art", img: "/kolam.png" },
   "Bihar": { route: "/result/madhubani", title: "Madhubani Art", desc: "Mithila Folk Art", img: "/madhubani.jpg" }

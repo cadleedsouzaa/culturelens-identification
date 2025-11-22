@@ -43,7 +43,7 @@ const KolamMaker = () => {
 
   return (
     <div className="flex flex-col h-full w-full bg-black">
-      <div className="h-[65%] w-full bg-gradient-to-b from-stone-800/50 to-black">
+      <div className="h-full w-full bg-gradient-to-b from-stone-800/50 to-black">
         <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 5], fov: 45 }}>
           <Stage intensity={0.5} environment="city" adjustCamera={true}>
              <MakerScene step={step} />

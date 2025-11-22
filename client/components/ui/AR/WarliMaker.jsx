@@ -140,7 +140,7 @@ const WarliMaker = () => {
     <div className="flex flex-col h-full w-full bg-black">
       
       {/* TOP: 3D CANVAS */}
-      <div className="h-[65%] w-full bg-gradient-to-b from-stone-800/50 to-black">
+      <div className="h-full w-full bg-gradient-to-b from-stone-800/50 to-black">
         <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 6], fov: 45 }}>
           
           {/* Add Suspense to prevent crash on texture load */}

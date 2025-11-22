@@ -66,7 +66,7 @@ const ChannapatnaMaker = () => {
     <div className="flex flex-col h-full w-full bg-stone-950">
       
       {/* 3D View - 70% Height (More space for model) */}
-      <div className="h-[70%] w-full bg-gradient-to-b from-stone-800 to-black relative">
+      <div className="h-full w-full bg-gradient-to-b from-stone-800 to-black relative">
         <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 6], fov: 40 }}>
           <Stage intensity={0.6} environment="city" adjustCamera={true}>
              <MakerScene step={step} />
